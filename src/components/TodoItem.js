@@ -3,6 +3,8 @@ import classNames from 'classnames'
 import './TodoItem.css'
 import check from '../image/check.svg';
 import checkCcomplete from '../image/check-complete.svg';
+import PropTypes, { string } from 'prop-types';
+
 class TodoItem extends Component{
  
     render(){
@@ -22,5 +24,12 @@ class TodoItem extends Component{
         );
          
     }
+}
+TodoItem.PropTypes={
+    item:PropTypes.shape({
+        isComplete:PropTypes.bool.isRequired,
+        title:string.isRequired
+    }),
+    onClick:PropTypes.func.isRequired
 }
 export default TodoItem;
