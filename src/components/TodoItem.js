@@ -25,11 +25,11 @@ class TodoItem extends Component{
          
     }
 }
-TodoItem.PropTypes={
-    item:PropTypes.shape({
-        isComplete:PropTypes.bool.isRequired,
-        title:string.isRequired
-    }),
-    onClick:PropTypes.func.isRequired
-}
+// TodoItem.PropTypes={
+//     item:PropTypes.shape({
+//         isComplete:PropTypes.bool.isRequired,
+//         title:string.isRequired
+//     }),
+//     onClick:PropTypes.func.isRequired
+// }
 export default TodoItem;
